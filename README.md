@@ -61,10 +61,10 @@
    * Go to DB Visualizer, on the top select bootcamp for the database
    * Then run the following query to create a table: 
    
-    CREATE TABLE oh_ohs 
+    ```CREATE TABLE oh_ohs 
     (year INTEGER, injuries INTEGER, fatal_injuries INTEGER, 
      total_fatalities INTEGER, fatalities_abroad INTEGER, 
-     flight_hours INTEGER, everything DOUBLE, fatal DOUBLE);
+     flight_hours INTEGER, everything DOUBLE, fatal DOUBLE);```
 
    * Clean the table. 
      * Get used to having to clean data!
