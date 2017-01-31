@@ -60,7 +60,12 @@
  * Let’s create a table that will work with dataset
    * Go to DB Visualizer, on the top select bootcamp for the database
    * Then run the following query to create a table: 
-```CREATE TABLE oh_ohs (year INTEGER, injuries INTEGER, fatal_injuries INTEGER, total_fatalities INTEGER, fatalities_abroad INTEGER, flight_hours INTEGER, everything DOUBLE, fatal DOUBLE);```
+   
+    CREATE TABLE oh_ohs 
+    (year INTEGER, injuries INTEGER, fatal_injuries INTEGER, 
+     total_fatalities INTEGER, fatalities_abroad INTEGER, 
+     flight_hours INTEGER, everything DOUBLE, fatal DOUBLE);
+
    * Clean the table. 
      * Get used to having to clean data!
      * Remove the header rows, and all of the garbage on the bottom of the file.
@@ -72,17 +77,17 @@
      * Save the file
    * You should now have another empty table
      * Test it by querying: SELECT * FROM oh_ohs;
-   * Let’s import some data: LOAD DATA LOCAL INFILE '/Users/R594437/Downloads/data.csv' INTO TABLE oh_ohs FIELDS TERMINATED BY ',' ;
+   * Let’s import some data: `LOAD DATA LOCAL INFILE '/Users/R594437/Downloads/data.csv' INTO TABLE oh_ohs FIELDS TERMINATED BY ',' ;`
      * Ensure that your query features your path / file name
    * See what you have:
-     * SELECT * FROM oh_ohs;
+     * `SELECT * FROM oh_ohs;`
    * Let’s try a more complicated query:
-     * SELECT * FROM oh_ohs WHERE flight_hours > 20000000 AND (fatal_injuries * 2) < total_fatalities; 
+     * `SELECT * FROM oh_ohs WHERE flight_hours > 20000000 AND (fatal_injuries * 2) < total_fatalities;` 
 
 
 ### ~~~ SQL isn’t enough? Let’s have python do some number crunching! ~~~
 
-15) Let’s create a python script: vim script.py
+15) Let’s create a python script: `vim script.py`
 
 16) Let’s edit the script, press ‘i’, then paste the following:
 
@@ -110,13 +115,13 @@
 
 
 17) Press ‘esc’
- * Type: :wq to save your work and press ‘enter’
+ * Type: `:wq` to save your work and press ‘enter’
 
 18) For the script to run we need the packages that we import in the script to be installed
  * Determine which packages you can install on your version of the machine: pip search mysql-connector
  * This worked for me: pip install mysql-connector
 
-19) Now run the script: python script.py
+19) Now run the script: `python script.py`
 
 ### ~~~ Are you an all-star who got this far? Well that’s all that I prepared in 4 hours, please read the link below for more! ~~~
 
