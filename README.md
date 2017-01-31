@@ -61,10 +61,10 @@
    * Go to DB Visualizer, on the top select bootcamp for the database
    * Then run the following query to create a table: 
    
-    ```CREATE TABLE oh_ohs 
+    `CREATE TABLE oh_ohs 
     (year INTEGER, injuries INTEGER, fatal_injuries INTEGER, 
      total_fatalities INTEGER, fatalities_abroad INTEGER, 
-     flight_hours INTEGER, everything DOUBLE, fatal DOUBLE);```
+     flight_hours INTEGER, everything DOUBLE, fatal DOUBLE);`
 
    * Clean the table. 
      * Get used to having to clean data!
@@ -123,7 +123,7 @@
 
 19) Now run the script: `python script.py`
 
-### ~~~ Are you an all-star who got this far? Well that’s all that I prepared in 4 hours, please read the link below for more! ~~~
+### ~~~ Are you an all-star who got this far? Well that’s all that I prepared in 5 hours, please read the link below for more! ~~~
 
 http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python
 
