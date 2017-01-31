@@ -12,42 +12,42 @@
  * Press “Start MySql Server”
  
 3) Go to the terminal
- * Copy the following: PATH="/usr/local/mysql/bin:$PATH"
+ * Copy the following: `PATH="/usr/local/mysql/bin:$PATH"`
    * This lets the terminal know where you have executable binaries and allows you to type mysql in the terminal instead of /usr/local/mysql/bin/mysql
- * Type mysql -u root -p
+ * Type `mysql -u root -p`
  * Paste the password you saved and press enter
  
 4) Congrats you got MySQL up!
 
-5) Change your password ALTER USER 'root'@'localhost' IDENTIFIED BY 'admin';
+5) Change your password: `ALTER USER 'root'@'localhost' IDENTIFIED BY 'admin';`
  * Feel free to change admin to anything you prefer
 
 6) Let’s explore the databases that we currently have: show databases;
 
-7) Create a new database: create database bootcamp;
+7) Create a new database: `create database bootcamp;`
 
-8) Check that it was created: show databases;
+8) Check that it was created: `show databases;`
 
-9) Select the database that you just created: use bootcamp;
+9) Select the database that you just created: `use bootcamp;`
 
-10) See if there are any tables in the database: show tables;
+10) See if there are any tables in the database: `show tables;`
  * There shouldn’t be any.
- * Let’s create one: CREATE TABLE first_table (name VARCHAR(20), AGE INTEGER);
+ * Let’s create one: `CREATE TABLE first_table (name VARCHAR(20), AGE INTEGER);`
    * In SQL column and tables names follow the underscore nomenclature
  * Check out some of the other datatypes here: https://dev.mysql.com/doc/refman/5.7/en/data-type-overview.html
 
-11) Let’s query the table: SELECT * FROM first_table;
+11) Let’s query the table: `SELECT * FROM first_table;`
  * Notice that it’s empty because you haven’t added anything to it yet
- * Let’s add a row: INSERT INTO first_table (name, age) VALUES (“Jesse”, 24);
- * Query the table again: SELECT * FROM first_table;
+ * Let’s add a row: `INSERT INTO first_table (name, age) VALUES (“Jesse”, 24);`
+ * Query the table again: `SELECT * FROM first_table;`
     * You should now see what you stored in the table!
 
 12) Let’s use a GUI
  * Downlod DB Visualizer here: https://www.dbvis.com/download/
 
 13) Connect to your MySQL instance
- * Create a new connection to: localhost:3306
- * Username is: root
+ * Create a new connection to: `localhost:3306`
+ * Username is: `root`
  * Password is whatever you made it
 
 
@@ -59,7 +59,8 @@
    * Rename the file to something sensible
  * Let’s create a table that will work with dataset
    * Go to DB Visualizer, on the top select bootcamp for the database
-   * Then run the following query to create a table: CREATE TABLE oh_ohs (year INTEGER, injuries INTEGER, fatal_injuries INTEGER, total_fatalities INTEGER, fatalities_abroad INTEGER, flight_hours INTEGER, everything DOUBLE, fatal DOUBLE); 
+   * Then run the following query to create a table: 
+```CREATE TABLE oh_ohs (year INTEGER, injuries INTEGER, fatal_injuries INTEGER, total_fatalities INTEGER, fatalities_abroad INTEGER, flight_hours INTEGER, everything DOUBLE, fatal DOUBLE);```
    * Clean the table. 
      * Get used to having to clean data!
      * Remove the header rows, and all of the garbage on the bottom of the file.
