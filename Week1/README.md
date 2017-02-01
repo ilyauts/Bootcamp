@@ -1,8 +1,8 @@
-##Jesse’s Bootcamp
+### Jesse's Bootcamp Week 1
 
 1) Go to https://dev.mysql.com/downloads/mysql/
-  * Create Oracle account
   * Download Mac OS X 10.12 (x86, 64-bit), DMG Archive
+  * Create Oracle account
   
 2) Install the dmg that you just downloaded
   * Go to the drive and install the database
@@ -24,9 +24,9 @@
 
 6) Let’s explore the databases that we currently have: show databases;
 
-7) Create a new database: `create database bootcamp;`
+7) Create a new database: `CREATE DATABASE bootcamp;`
 
-8) Check that it was created: `show databases;`
+8) Check that it was created: `SHOW DATABASES;`
 
 9) Select the database that you just created: `use bootcamp;`
 
@@ -71,7 +71,7 @@
      * Remove the header rows, and all of the garbage on the bottom of the file.
      * Select all of the integer values
         * Right click
-        * Click format data
+        * Click 'Format Cells'
         * Select ‘Number’ on the left side
         * Set the precision at 0
      * Save the file
@@ -118,12 +118,11 @@
  * Type: `:wq` to save your work and press ‘enter’
 
 18) For the script to run we need the packages that we import in the script to be installed
- * Determine which packages you can install on your version of the machine: pip search mysql-connector
- * This worked for me: pip install mysql-connector
+ * Determine which packages you can install on your version of the machine: `pip search mysql-connector`
+ * This worked for me: `pip install mysql-connector`
 
 19) Now run the script: `python script.py`
 
 ### ~~~ Are you an all-star who got this far? Well that’s all that I prepared in 5 hours, please read the link below for more! ~~~
 
 http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python
-
