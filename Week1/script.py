@@ -5,7 +5,7 @@ try:
   config = {
 	'user': 'root',
  	'password': 'admin',
-        'host': 'localhost',
+  'host': 'localhost',
 	'database': 'bootcamp'
   }
   cnx = mysql.connector.connect(**config)
