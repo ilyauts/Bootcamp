@@ -1,4 +1,4 @@
-## Bootcamp for Jesse - Week 2
+### Jesse's Bootcamp Week 2
 
 Today we're going to be learning about GIT, running some python scripts, and going over anything and everything that wasn't clear during our last lesson. 
 
