@@ -7,7 +7,9 @@ Let's pick up where we left off two weeks ago!
 2) Answer check from last lesson:
 
 [5A] `SELECT year FROM fourth_table ORDER BY injuries DESC LIMIT 1`
+
 [6A] See script
+
 [7A] See script
 
 3) The general approach to solving problems in data science
@@ -24,54 +26,54 @@ Let's pick up where we left off two weeks ago!
 
 4) Let's install R:
 
-				brew tap homebrew/science
-				brew install r
+	brew tap homebrew/science
+	brew install r
 
-	You can access r in terminal by typing `r`. Type `q()` to quit.
+You can access r in terminal by typing `r`. Type `q()` to quit.
 
 5) And R Studio:
 
-				https://download1.rstudio.org/RStudio-1.0.136.dmg
+	https://download1.rstudio.org/RStudio-1.0.136.dmg
 
 6) Let's use some R: 
 
-				# Create a vector
-				myVect <- c(1,2,3,4,5)
+	# Create a vector
+	myVect <- c(1,2,3,4,5)
 
-				# Print it out to the screen
-				myVect
+	# Print it out to the screen
+	myVect
 
-				# Plot the vector
-				plot(myVect)
+	# Plot the vector
+	plot(myVect)
 
-				# Find the average
-				mean(myVect)
+	# Find the average
+	mean(myVect)
 
-				# Find the standard deviation
-				sd(myVect)
+	# Find the standard deviation
+	sd(myVect)
 
-				# Create a vector that is the square of the myVect vector
-				myVectSqd = myVect^2
+	# Create a vector that is the square of the myVect vector
+	myVectSqd = myVect^2
 
-				# Now plot this vector in the same plot
-				plot(myVectSqd)
+	# Now plot this vector in the same plot
+	plot(myVectSqd)
 
-				# Let's clear the plot area and only plot the second vector
-				plot.New()
-				plot(myVectSqd)
+	# Let's clear the plot area and only plot the second vector
+	plot.New()
+	plot(myVectSqd)
 
-				# Finally find the cross product between the two vectors
-				crossprod(t(myVect), myVectSqd)
+	# Finally find the cross product between the two vectors
+	crossprod(t(myVect), myVectSqd)
 
-				# Just for funsies, let's create a diagonal identity matrix
-				diag(1, 5)
+	# Just for funsies, let's create a diagonal identity matrix
+	diag(1, 5)
 
-				# What about a different number?
-				diag(532, 17)
+	# What about a different number?
+	diag(532, 17)
 
-				# Find the cross product between a diagonalized matrix and a vector
-				newVector <- c(2,2,2,2,2,2,2,2,2,2)
-				crossprod(diag(10,10), newVector)
+	# Find the cross product between a diagonalized matrix and a vector
+	newVector <- c(2,2,2,2,2,2,2,2,2,2)
+	crossprod(diag(10,10), newVector)
 
 7) I was going to go into Random Forests this week, but it proved to be a little more complicated and difficult to explain than previously anticipated. We'll leave that until the next lesson. Instead, let's practice some more python and sql skills - without them, nothing is going to get done. 
 
