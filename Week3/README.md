@@ -59,7 +59,7 @@ You can access r in terminal by typing `r`. Type `q()` to quit.
 	plot(myVectSqd)
 
 	# Let's clear the plot area and only plot the second vector
-	plot.New()
+	plot.new()
 	plot(myVectSqd)
 
 	# Finally find the cross product between the two vectors
